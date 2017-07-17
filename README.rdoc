@@ -5,7 +5,7 @@ This app has includes a GET route that provides a JSON API.
 To run the app:
   rails server
   
-Visit route `/cats` to visit the route. 
+Visit route /cats to access the API: 
   localhost:3000/cats
   
 
