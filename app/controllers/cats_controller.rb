@@ -1,15 +1,11 @@
 class CatsController < ApplicationController
   def index
-    cats = [
-      {name: "Tibby"},
-      {name: "Garry"},
-      {name: "Berty"}
-    ]
-      # send json
-      render json: cats
+    @cats =  Cat.all()
+      render :json => @cats
   end
 
-
-
-
+  def show
+    @cat = Cat.find(params[:id])
+    render :json => @cat
+  end
 end
